@@ -21,3 +21,36 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [HomeController::class,'index']);
+
+Route::get('/index', function () {
+    return view('frontend.layouts.index');
+})->name('index');
+
+Route::get('/contact', function () {
+    return view('frontend.pages.contact');
+})->name('contact');
+
+Route::get('/about', function () {
+    return view('frontend.pages.about');
+})->name('about');
+
+Route::get('/blog', function () {
+    return view('frontend.pages.blog');
+})->name('blog');
+
+Route::get('/service', function () {
+    return view('frontend.pages.service');
+})->name('service');
+
+Route::get('/team', function () {
+    return view('frontend.pages.team');
+})->name('team');
+
+Route::get('/project', function () {
+    return view('frontend.pages.project');
+})->name('project');
+
+Route::get('/single', function () {
+    return view('frontend.pages.single');
+})->name('single');
+
